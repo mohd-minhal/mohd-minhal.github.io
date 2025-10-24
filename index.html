@@ -5,63 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>@er.mohdminhal | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href=images/my-pic-rounded.png>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <style>
-        html,
-        body,
-        * {
-            transition: all .4s ease;
-            scroll-behavior: smooth;
-        }
-
-        section.home .intro span.designation-span {
-            font-size: 80px;
-            white-space: nowrap;
-            font-weight: 700;
-            line-height: 1.2em;
-            text-transform: capitalize;
-            color: #fff;
-            margin-bottom: 30px;
-            margin-top: 20px;
-            background: url(./images/design.jpg);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .logo-h1 {
-            color: white;
-            display: flex;
-        }
-
-        .logo-h1 span {
-            color: var(--d-secondary);
-        }
-
-        @media screen and (max-width: 1368px) {
-            section.home .intro span.designation-span {
-                font-size: 60px;
-            }
-        }
-
-        @media screen and (max-width: 992px) {
-            section.home .intro span.designation-span {
-                font-size: 40px;
-            }
-
-            section.home .intro h1 {
-                font-size: 28px;
-            }
-        }
-
-        .about-img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-    </style>
     <style data-loader-style>
         .loader-loading {
             overflow: hidden
@@ -163,15 +107,15 @@
     </style>
     <style data-toast-style>
         @font-face {
-            font-family: SegoeUI;
-            src: local("Segoe UI"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
-            font-weight: 400
+        font-family: SegoeUI;
+        src: local("Segoe UI"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/normal/latest.ttf) format("truetype");
+        font-weight: 400
         }
 
         @font-face {
-            font-family: SegoeUI Bold;
-            src: local("Segoe UI Bold"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
-            font-weight: 600
+        font-family: SegoeUI Bold;
+        src: local("Segoe UI Bold"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff2) format("woff2"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.woff) format("woff"), url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/bold/latest.ttf) format("truetype");
+        font-weight: 600
         }
 
         .toast-alert-wrapper {
@@ -303,247 +247,204 @@
     </style>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body class="default">
-    <header class="d-flex align-items-start flex-column desktop-header-2 default ">
-        <div class="site-logo ">
-            <a href="/">
-                <h1 class="logo-h1">K <span>.</span></h1>
-            </a>
-        </div>
-        <nav class="">
-            <ul class="vertical-menu scrollspy ">
-                <li>
-                    <a href="#home" class="nav-link active"><i class='bx bx-home'></i></a>
-                    <div class="tooltip">Home</div>
-                </li>
-                <li>
-                    <a href="#about" class="nav-link "><i class='bx bx-user-check'></i> </a>
-                    <div class="tooltip">About</div>
-                </li>
-                <li>
-                    <a href="#skills" class="nav-link "><i class='bx bx-book-alt'></i> </a>
-                    <div class="tooltip">Skills</div>
-                </li>
-                <li>
-                    <a href="#services" class="nav-link "><i class='bx bx-briefcase-alt'></i> </a>
-                    <div class="tooltip">Services</div>
-                </li>
-                <li>
-                    <a href="#experience" class="nav-link "><i class='bx bxs-graduation'></i> </a>
-                    <div class="tooltip">Experience</div>
-                </li>
-                <li>
-                    <a href="#works" class="nav-link "><i class='bx bx-layer'></i> </a>
-                    <div class="tooltip">Works</div>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-link "><i class='bx bx-conversation'></i> </a>
-                    <div class="tooltip">Contact</div>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class=" content-2">
-        <div id="parentDiv" class="main-content">
-            <section id="home" class="home d-flex align-items-center">
-                <div class="container ">
-                    <div class="intro ">
-                        <img class="my-pic" src="/images/my-pic.jpg" alt="Bolby" class="mb-4 ">
-                        <br />
-                        I'm<h1 class="mb-2 mt-0" style="display: inline-block;margin-left: 15px">Mohd Minhal</h1>
-                        <br />
-                        an<span class="text-rotating morphext ">
-                            <span class="designation-span">Engineer</span>
-                        </span>
-                        <ul id="social-links" class="social-icons light list-inline mb-0 mt-4 ">
-                            <li class="list-inline-item">
-                                <a id="instagram" href="https://www.instagram.com/" target="_blank">
-                                    <i class='bx bxl-instagram'></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a id="github" href="https://github.com/MohdMinhal" target="_blank">
-                                    <i class='bx bxl-github'></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item ">
-                                <a id="linkedin" href="https://www.linkedin.com/in/mohd-minhal-56b785268/"
-                                    target="_blank" class="">
-                                    <i class='bx bxl-linkedin-square'></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a id="CodePen" href="https://codepen.io/castleold19" target="_blank">
-                                    <i class='bx bxl-codepen'></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="mt-4 "><a href="#contact" class="btn btn-default ">Hire me</a></div>
-                    </div>
-                    <div class="scroll-down"><a href="#about" class="mouse-wrapper "><span class="">Scroll Down</span><span
-                                class="mouse"><span class="wheel"></span></span></a>
-                    </div>
+<header class="d-flex align-items-start flex-column desktop-header-2 default ">
+    <div class="site-logo ">
+        <a href="/">
+            <h1 class="logo-h1">K <span>.</span></h1>
+        </a>
+    </div>
+    <nav>
+        <ul class="vertical-menu scrollspy">
+            <li><a class="nav-link"><i class='bx bx-home'></i></a>
+                <div class="tooltip">Home</div>
+            </li>
+            <li><a class="nav-link"><i class='bx bx-user-check'></i></a>
+                <div class="tooltip">About</div>
+            </li>
+            <li><a class="nav-link"><i class='bx bx-book-alt'></i></a>
+                <div class="tooltip">Skills</div>
+            </li>
+            <li><a class="nav-link"><i class='bx bx-briefcase-alt'></i></a>
+                <div class="tooltip">Experience</div>
+            </li>
+            <li><a class="nav-link"><i class='bx bxs-graduation'></i></a>
+                <div class="tooltip">Education</div>
+            </li>
+            <li><a class="nav-link"><i class='bx bx-layer'></i></a>
+                <div class="tooltip">Works</div>
+            </li>
+            <li><a class="nav-link"><i class='bx bx-conversation'></i></a>
+                <div class="tooltip">Contact</div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class=" content-2">
+    <div id="parentDiv" class="main-content">
+        <section id="home" class="home d-flex align-items-center">
+            <div class="container">
+                <div class="intro">
+                    <img class="my-pic mb-4" src="/images/my-pic.jpg" alt="John Doe">
+                    <br/>
+                    I'm <h1 id="my-name" class="mb-2 mt-0" style="display: inline-block; margin-left: 15px;">Mohd Minhal</h1>
+                    <br/>
+                    an <span class="text-rotating morphext">
+        <span class="designation-span" id="title">Full Stack Developer</span>
+      </span>
+                    <ul id="social-links" class="social-icons light list-inline mb-0 mt-4">
+                        <li class="list-inline-item">
+                            <a id="github" href="#" target="_blank">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a id="linkedin" href="#" target="_blank">
+                                <i class='bx bxl-linkedin-square'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a id="codepen" href="#" target="_blank">
+                                <i class='bx bxl-codepen'></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mt-4"><a href="#contact" class="btn btn-default">Hire me</a></div>
+                </div>
+                <div class="scroll-down"><a href="#about" class="mouse-wrapper "><span class="">Scroll Down</span><span
+                        class="mouse"><span class="wheel"></span></span></a>
+                </div>
 
-                    <div id="scene" data-relative-input="true" class="parallax "
-                        style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
-                        <svg width="27" height="29" data-depth="0.3" xmlns="http://www.w3.org/2000/svg"
-                            class="layer p1 "
-                            style="transform: translate3d(16.6px, -25.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
-                            <path
+                <div id="scene" data-relative-input="true" class="parallax "
+                     style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+                    <svg width="27" height="29" data-depth="0.3" xmlns="http://www.w3.org/2000/svg"
+                         class="layer p1 "
+                         style="transform: translate3d(16.6px, -25.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+                        <path
                                 d="M21.15625.60099c4.37954 3.67487 6.46544 9.40612 5.47254 15.03526-.9929 5.62915-4.91339 10.30141-10.2846 12.25672-5.37122 1.9553-11.3776.89631-15.75715-2.77856l2.05692-2.45134c3.50315 2.93948 8.3087 3.78663 12.60572 2.22284 4.297-1.5638 7.43381-5.30209 8.22768-9.80537.79387-4.50328-.8749-9.08872-4.37803-12.02821L21.15625.60099z"
                                 fill="var(--d-primary)" fill-rule="evenodd" class=""></path>
-                        </svg>
-                        <svg width="26" height="26" data-depth="0.2" xmlns="http://www.w3.org/2000/svg"
-                            class="layer p2 "
-                            style="transform: translate3d(11.1px, -16.8px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
-                            <path d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z" stroke="var(--d-secondary)"
-                                stroke-width="3" fill="none" fill-rule="evenodd" class=""></path>
-                        </svg>
-                        <svg width="30" height="25" data-depth="0.3" xmlns="http://www.w3.org/2000/svg"
-                            class="layer p3 "
-                            style="transform: translate3d(16.6px, -25.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
-                            <path
+                    </svg>
+                    <svg width="26" height="26" data-depth="0.2" xmlns="http://www.w3.org/2000/svg"
+                         class="layer p2 "
+                         style="transform: translate3d(11.1px, -16.8px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+                        <path d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z" stroke="var(--d-secondary)"
+                              stroke-width="3" fill="none" fill-rule="evenodd" class=""></path>
+                    </svg>
+                    <svg width="30" height="25" data-depth="0.3" xmlns="http://www.w3.org/2000/svg"
+                         class="layer p3 "
+                         style="transform: translate3d(16.6px, -25.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+                        <path
                                 d="M.1436 8.9282C3.00213 3.97706 8.2841.92763 14.00013.92796c5.71605.00032 10.9981 3.04992 13.85641 8 2.8583 4.95007 2.8584 11.0491-.00014 16.00024l-2.77128-1.6c2.28651-3.96036 2.28631-8.84002.00011-12.8002-2.2862-3.96017-6.5124-6.40017-11.08513-6.4-4.57271.00018-8.79872 2.43984-11.08524 6.4002l-2.77128-1.6z"
                                 fill="#44D7B6" fill-rule="evenodd" class=""></path>
-                        </svg>
-                        <svg width="15" height="23" data-depth="0.6" xmlns="http://www.w3.org/2000/svg"
-                            class="layer p4 "
-                            style="transform: translate3d(33.2px, -50.5px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
-                            <rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5"
-                                fill="var(--d-primary)" fill-rule="evenodd" class=""></rect>
-                        </svg>
-                        <svg width="15" height="23" data-depth="0.2" xmlns="http://www.w3.org/2000/svg"
-                            class="layer p5 "
-                            style="transform: translate3d(11.1px, -16.8px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
-                            <rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5"
-                                fill="#6C6CE5" fill-rule="evenodd" class=""></rect>
-                        </svg>
-                        <svg width="49" height="17" data-depth="0.5" xmlns="http://www.w3.org/2000/svg"
-                            class="layer p6 "
-                            style="transform: translate3d(27.7px, -42.1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
-                            <g fill="var(--d-secondary)" fill-rule="evenodd" class="">
-                                <path
+                    </svg>
+                    <svg width="15" height="23" data-depth="0.6" xmlns="http://www.w3.org/2000/svg"
+                         class="layer p4 "
+                         style="transform: translate3d(33.2px, -50.5px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+                        <rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5"
+                              fill="var(--d-primary)" fill-rule="evenodd" class=""></rect>
+                    </svg>
+                    <svg width="15" height="23" data-depth="0.2" xmlns="http://www.w3.org/2000/svg"
+                         class="layer p5 "
+                         style="transform: translate3d(11.1px, -16.8px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+                        <rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5"
+                              fill="#6C6CE5" fill-rule="evenodd" class=""></rect>
+                    </svg>
+                    <svg width="49" height="17" data-depth="0.5" xmlns="http://www.w3.org/2000/svg"
+                         class="layer p6 "
+                         style="transform: translate3d(27.7px, -42.1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+                        <g fill-rule="evenodd" class="">
+                            <path
                                     d="M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z"
                                     class=""></path>
-                                <path
+                            <path
                                     d="M23.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C46.1175 5.50106 48.5 10.78292 48.5 16.5H46c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0-3.09375 2.28651-5 6.51232-5 11.08535h-2.5z"
                                     class=""></path>
-                            </g>
-                        </svg>
-                        <svg width="26" height="26" data-depth="0.4" xmlns="http://www.w3.org/2000/svg"
-                            class="layer p7 "
-                            style="transform: translate3d(22.1px, -33.7px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
-                            <path d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z" stroke="var(--d-primary)"
-                                stroke-width="3" fill="none" fill-rule="evenodd" class=""></path>
-                        </svg>
-                        <svg width="19" height="21" data-depth="0.3" xmlns="http://www.w3.org/2000/svg"
-                            class="layer p8 "
-                            style="transform: translate3d(16.6px, -25.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
-                            <rect transform="rotate(-40 6.25252 10.12626)" x="7" width="3" height="25" rx="1.5"
-                                fill="#6C6CE5" fill-rule="evenodd" class=""></rect>
-                        </svg>
-                        <svg width="30" height="25" data-depth="0.3" data-depth-y="-1.30"
-                            xmlns="http://www.w3.org/2000/svg" class="layer p9 "
-                            style="transform: translate3d(16.6px, 109.4px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
-                            <path
+                        </g>
+                    </svg>
+                    <svg width="26" height="26" data-depth="0.4" xmlns="http://www.w3.org/2000/svg"
+                         class="layer p7 "
+                         style="transform: translate3d(22.1px, -33.7px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+                        <path d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z" stroke="var(--d-primary)"
+                              stroke-width="3" fill="none" fill-rule="evenodd" class=""></path>
+                    </svg>
+                    <svg width="19" height="21" data-depth="0.3" xmlns="http://www.w3.org/2000/svg"
+                         class="layer p8 "
+                         style="transform: translate3d(16.6px, -25.3px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+                        <rect transform="rotate(-40 6.25252 10.12626)" x="7" width="3" height="25" rx="1.5"
+                              fill="#6C6CE5" fill-rule="evenodd" class=""></rect>
+                    </svg>
+                    <svg width="30" height="25" data-depth="0.3" data-depth-y="-1.30"
+                         xmlns="http://www.w3.org/2000/svg" class="layer p9 "
+                         style="transform: translate3d(16.6px, 109.4px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+                        <path
                                 d="M29.8564 16.0718c-2.85854 4.95114-8.1405 8.00057-13.85654 8.00024-5.71605-.00032-10.9981-3.04992-13.85641-8-2.8583-4.95007-2.8584-11.0491.00014-16.00024l2.77128 1.6c-2.28651 3.96036-2.28631 8.84002-.00011 12.8002 2.2862 3.96017 6.5124 6.40017 11.08513 6.4 4.57271-.00018 8.79872-2.43984 11.08524-6.4002l2.77128 1.6z"
                                 fill="#6C6CE5" fill-rule="evenodd" class=""></path>
-                        </svg>
-                        <svg width="47" height="29" data-depth="0.2" xmlns="http://www.w3.org/2000/svg"
-                            class="layer p10 "
-                            style="transform: translate3d(11.1px, -16.8px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
-                            <g fill="#44D7B6" fill-rule="evenodd" class="">
-                                <path
+                    </svg>
+                    <svg width="47" height="29" data-depth="0.2" xmlns="http://www.w3.org/2000/svg"
+                         class="layer p10 "
+                         style="transform: translate3d(11.1px, -16.8px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+                        <g fill-rule="evenodd" class="">
+                            <path
                                     d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z"
                                     class=""></path>
-                                <path
+                            <path
                                     d="M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z"
                                     class=""></path>
-                            </g>
-                        </svg>
-                        <svg width="33" height="20" data-depth="0.5" xmlns="http://www.w3.org/2000/svg"
-                            class="layer p11 "
-                            style="transform: translate3d(27.7px, -42.1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
-                            <path
+                        </g>
+                    </svg>
+                    <svg width="33" height="20" data-depth="0.5" xmlns="http://www.w3.org/2000/svg"
+                         class="layer p11 "
+                         style="transform: translate3d(27.7px, -42.1px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+                        <path
                                 d="M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z"
                                 fill="var(--d-primary)" fill-rule="evenodd" class=""></path>
-                        </svg>
-                    </div>
+                    </svg>
                 </div>
-            </section>
-            <section id="about">
-                <div class="container">
-                    <h2 class="section-title wow fadeInUp">About Me</h2>
-                    <div class="spacer-60"></div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="text-center text-md-left">
-                                <img class="rounded-corner" src="/images/my-pic-2.jpeg" alt="Bolby">
-                            </div>
-                            <div class="spacer-30 d-md-none d-lg-none"></div>
+            </div>
+        </section>
+        <div class="spacer-30"></div>
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title wow fadeInUp">About Me</h2>
+                <div class="spacer-60"></div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="text-center text-md-left">
+                            <img class="rounded-corner" src="/images/my-pic-2.jpeg" alt="Bolby">
                         </div>
-                        <div class="col-md-9 triangle-left-md triangle-top-sm">
-                            <div class="rounded bg-white shadow-dark padding-30">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <p id="bio"> Hey There!, I'm an Engineering Graduate, enthusiastic about Java
-                                            programming and web development. I can use my
-                                            skills to provide you a well design/developed, modern, and responsive
-                                            product. I
-                                            can design and develop a product that is well optimized,flexible, and
-                                            adaptable
-                                            to future changes. </p>
-                                        <div class="mt-3"><a target="_blank" href="/MohdMinhal-Resume.pdf"
-                                                class="btn btn-default">Download CV</a></div>
-                                        <div class="spacer-30 d-md-none d-lg-none"></div>
+                        <div class="spacer-30 d-md-none d-lg-none"></div>
+                    </div>
+                    <div class="col-md-9 triangle-left-md triangle-top-sm">
+                        <div class="rounded bg-white shadow-dark padding-30">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <!-- This paragraph will be populated dynamically -->
+                                    <p id="bio">Loading description...</p>
+                                    <div class="mt-3">
+                                        <a id="download-cv" class="btn btn-default" target="_blank"
+                                           rel="noopener noreferrer" href="#">
+                                            Download CV
+                                        </a>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-md-4 col-6">
-                                                    <div class="client-item">
-                                                        <div class="inner">
-                                                            <img alt="client-name" src="/images/client-1.png">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-6">
-                                                    <div class="client-item">
-                                                        <div class="inner">
-                                                            <img alt="client-name" src="/images/client-2.svg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-6">
-                                                    <div class="client-item">
-                                                        <div class="inner">
-                                                            <img alt="client-name" src="/images/client-3.svg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-4 col-6">
-                                                    <div class="client-item">
-                                                        <div class="inner">
-                                                            <img alt="client-name" src="/images/client-5.svg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-6">
-                                                    <div class="client-item">
-                                                        <div class="inner">
-                                                            <img alt="client-name" src="/images/client-6.svg">
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-4 col-6">
-                                                    <div class="client-item">
-                                                        <div class="inner">
-                                                            <img alt="client-name" src="/images/client-8.svg">
-                                                        </div>
-                                                    </div>
+                                    <div class="spacer-30 d-md-none d-lg-none"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div id="tech-logos">
+                                                <div class="logos">
+                                                    <img src="https://cdn.simpleicons.org/openjdk" alt="Java Logo"
+                                                         class="tech-logo"/>
+                                                    <img src="https://cdn.simpleicons.org/python" alt="Python Logo"
+                                                         class="tech-logo"/>
+                                                    <img src="https://cdn.simpleicons.org/springboot"
+                                                         alt="Spring Boot Logo" class="tech-logo"/>
+                                                    <img src="https://cdn.simpleicons.org/javascript"
+                                                         alt="JavaScript Logo" class="tech-logo"/>
+                                                    <img src="https://cdn.simpleicons.org/react" alt="React Logo"
+                                                         class="tech-logo"/>
+                                                    <img src="https://cdn.simpleicons.org/nodedotjs" alt="Node.js Logo"
+                                                         class="tech-logo"/>
                                                 </div>
                                             </div>
                                         </div>
@@ -552,383 +453,154 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <div class="spacer-30"></div>
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="spacer-60"></div>
+                <div id="skills-container" class="container-skillBar">
+                    <!-- Skill bars inserted here dynamically -->
+                </div>
+            </div>
+        </section>
+        <div class="spacer-30"></div>
+        <section id="experience">
+            <div class="container">
+                <h2 class="section-title wow fadeInUp">Experience</h2>
+                <div class="spacer-60"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="spacer-30 d-md-none d-lg-none"></div>
+                        <div id="experience-container"
+                             class="timeline exp bg-white shadow-dark rounded padding-30 overflow-hidden">
+                            <!-- Experience items will be inserted here dynamically -->
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="spacer-30"></div>
+        <section id="education">
+            <div class="container">
+                <h2 class="section-title wow fadeInUp"> Education</h2>
+                <div class="spacer-60"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="timeline edu rounded bg-white shadow-dark padding-30 overflow-hidden">
+                            <div id="education-container">
+                                <!-- Education items will be dynamically inserted here -->
+                            </div>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="spacer-30"></div>
+        <section id="works">
+            <div class="container">
+                <h2 class="section-title wow fadeInUp">Recent works</h2>
+                <div class="spacer-60"></div>
 
-                    <!--<div class="row">
-                    <div class="col-md-3 col-sm-6">
-                        <div class="fact-item"><span class="icon icon-fire"></span>
-                            <div class="details">
-                                <h3 class="mb-0 mt-0 number"><em class="count">198</em></h3>
-                                <p class="mb-0">Projects completed</p>
-                            </div>
-                        </div>
-                        <div class="spacer-30 d-md-none d-lg-none"></div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="fact-item"><span class="icon icon-cup"></span>
-                            <div class="details">
-                                <h3 class="mb-0 mt-0 number"><em class="count">5670</em></h3>
-                                <p class="mb-0">Cup of coffee</p>
-                            </div>
-                        </div>
-                        <div class="spacer-30 d-md-none d-lg-none"></div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="fact-item"><span class="icon icon-people"></span>
-                            <div class="details">
-                                <h3 class="mb-0 mt-0 number"><em class="count">427</em></h3>
-                                <p class="mb-0">Satisfied clients</p>
-                            </div>
-                        </div>
-                        <div class="spacer-30 d-md-none d-lg-none"></div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <div class="fact-item"><span class="icon icon-badge"></span>
-                            <div class="details">
-                                <h3 class="mb-0 mt-0 number"><em class="count">35</em></h3>
-                                <p class="mb-0">Nominees winner</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-                </div>
-            </section>
-            <section id="skills">
-                <div class="container">
-                    <h2 class="section-title wow fadeInUp"> Skills</h2>
-                    <div class="spacer-60"></div>
-                    <div class="container-skillbar">
-                        <!-- Ende Skill Bar -->
-                        <div class="skillbar clearfix " data-percent="100%">
-                            <div class="skillbar-title" style="background: #DD1E2F;"><span>Electronics Basic</span>
-                            </div>
-                            <div class="skillbar-bar two"></div>
-                            <div class="skill-bar-percent"></div>
-                        </div>
-                        <div class="skillbar clearfix " data-percent="100%">
-                            <div class="skillbar-title" style="background: #970cc1;"><span>Python</span></div>
-                            <div class="skillbar-bar one"></div>
-                            <div class="skill-bar-percent"></div>
-                        </div>
-                        <!-- Ende Skill Bar -->
-                        <div class="skillbar clearfix " data-percent="100%">
-                            <div class="skillbar-title" style="background: #EBB035;"><span>HTML/CSS</span></div>
-                            <div class="skillbar-bar four"></div>
-                            <div class="skill-bar-percent"></div>
-                        </div>
-                        <!-- Ende Skill Bar -->
-                        <div class="skillbar clearfix " data-percent="100%">
-                            <div class="skillbar-title" style="background:  #55a69f;"><span>Java</span></div>
+                <!-- Filter buttons will be generated here -->
+                <ul class="portfolio-filter list-inline wow fadeInUp"></ul>
 
-                            <div class="skillbar-bar five"></div>
-                            <div class="skill-bar-percent"></div>
-                        </div>
-                        <!-- Ende Skill Bar -->
-                        <div class="skillbar clearfix " data-percent="100%">
-                            <div class="skillbar-title" style="background: #06A2CB;"><span>Javascript</span></div>
-                            <div class="skillbar-bar six"></div>
-                            <div class="skill-bar-percent"></div>
-                        </div>
-                        <!-- Ende Skill Bar -->
-                        <div class="skillbar clearfix " data-percent="100%">
-                            <div class="skillbar-title" style="background: #218559;"><span>DSA</span></div>
-                            <div class="skillbar-bar seven"></div>
-                            <div class="skill-bar-percent"></div>
-                        </div>
-                        <!-- Ende Skill Bar -->
-                        <div class="skillbar clearfix " data-percent="100%">
-                            <div class="skillbar-title" style="background: #192823;"><span>SQL</span></div>
-                            <div class="skillbar-bar three"></div>
-                            <div class="skill-bar-percent"></div>
-                        </div>
-                    </div>
-                    <!-- Ende Skill Bar -->
+                <div class="pf-filter-wrapper">
+                    <label>
+                        <select class="portfolio-filter-mobile">
+                            <!-- Options will be generated dynamically -->
+                        </select>
+                    </label>
                 </div>
-                <!-- Ende container Skill Bar -->
-                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-                <script src="js/skillbar.js"></script>
-            </section>
-            <section id="services">
-                <div class="container">
-                    <h2 class="section-title wow fadeInUp"> Services</h2>
-                    <div class="spacer-60"></div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div
-                                class="service-box rounded data-background padding-30 text-center text-light shadow-blue bg-blue">
-                                <h3 class="mb-3 mt-0">Website Development</h3>
-                                <p class="mb-0">Get your own website today with latest and treading design.</p>
-                            </div>
-                            <div class="spacer-30 d-md-none d-lg-none"></div>
-                        </div>
-                        <div class="col-md-4">
-                            <div
-                                class="service-box rounded data-background padding-30 text-center shadow-yellow bg-yellow">
-                                <h3 class="mb-3 mt-0">Backend</h3>
-                                <p class="mb-0">Web-based E-commerce and CRM setup, just a step.</p>
-                            </div>
-                            <div class="spacer-30 d-md-none d-lg-none"></div>
-                        </div>
-                        <div class="col-md-4">
-                            <div
-                                class="service-box rounded data-background padding-30 text-center text-light shadow-pink bg-pink">
-                                <h3 class="mb-3 mt-0">Frontend</h3>
-                                <p class="mb-0">An application using the most trending technologies in the world</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-5 text-center">
-                        <p class="mb-0">Looking for a custom job? <a href="#contact">Click here</a> to contact me! 👋
-                        </p>
-                    </div>
+
+                <div class="row portfolio-wrapper" id="projects-container">
+                    <!-- Projects will be dynamically inserted here -->
                 </div>
-            </section>
-            <section id="experience">
-                <div class="container">
-                    <h2 class="section-title wow fadeInUp"> Experience</h2>
-                    <div class="spacer-60"></div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="timeline edu rounded bg-white shadow-dark padding-30 overflow-hidden">
-                                <div class="timeline-container wow fadeInUp">
-                                    <div class="content"><span class="time">Till 2020</span>
-                                        <h3 class="title">Intermediate</h3>
-                                        <p>City Montessori School.</p>
-                                    </div>
-                                </div>
-                                <div data-wow-delay="0.2s" class="timeline-container wow fadeInUp">
-                                    <div class="content"><span class="time">2020 - 2024</span>
-                                        <h3 class="title">Btech</h3>
-                                        <p>Babu Banarasi Das Northern Institute of Technology </p>
-                                    </div>
-                                </div>
-                                <span class="line"></span>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="spacer-30 d-md-none d-lg-none"></div>
-                            <div class="timeline exp bg-white shadow-dark rounded padding-30 overflow-hidden">
-                                <div class="timeline-container wow fadeInUp">
-                                    <div class="content"><span class="time">2023-</span>
-                                        <h3 class="title">Freelancer</h3>
-                                        <p>Did some work as a freelancer, working on many diverse languages depending on
-                                            requests.</p>
-                                    </div>
-                                </div>
-                                <div data-wow-delay="0.2s" class="timeline-container wow fadeInUp">
-                                    <div class="content"><span class="time">Aug 2023 - Sept 2023</span>
-                                        <h3 class="title">Web Application Developer</h3>
-                                        <p>Did one month internship in my 3rd yr on web development at Code Clause.</p>
-                                    </div>
-                                </div>
-                                <div data-wow-delay="0.4s" class="timeline-container wow fadeInUp">
-                                    <div class="content"><span class="time">June 2023 - Jul 2023</span>
-                                        <h3 class="title">Application Developer</h3>
-                                        <p>Did one month internship in my 3rd yr on Android application development at
-                                            Oasis Infobyte.</p>
-                                    </div>
-                                </div>
-                                <span class="line"></span>
-                            </div>
+
+                <div class="col-md-12 mt-3">
+                    <a id="more-projects-btn" href="#" target="_blank" class="btn btn-default">See More Projects</a>
+                </div>
+            </div>
+        </section>
+        <div class="spacer-30"></div>
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title wow fadeInUp">Get In Touch</h2>
+                <div class="spacer-60"></div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="contact-info">
+                            <h3 class="wow fadeInUp">Let's talk about everything!</h3>
+                            <p class="wow fadeInUp">
+                                Don't like forms? Send me an
+                                <a id="contact-email" href="#">email</a>. 👋
+                            </p>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section id="works">
-                <div class="container">
-                    <h2 class="section-title wow fadeInUp">Recent works</h2>
-                    <div class="spacer-60"></div>
-                    <ul class="portfolio-filter list-inline wow fadeInUp">
-                        <li class="list-inline-item current">Everything</li>
-                        <li class="list-inline-item">Creative</li>
-                        <li class="list-inline-item">Art</li>
-                        <li class="list-inline-item">Design</li>
-                        <li class="list-inline-item">Branding</li>
-                    </ul>
-                    <div class="pf-filter-wrapper"><select class="portfolio-filter-mobile">
-                            <option value="all">Everything</option>
-                            <option value="creative">Creative</option>
-                            <option value="art">Art</option>
-                            <option value="design">Design</option>
-                            <option value="branding">Branding</option>
-                        </select></div>
-                    <div class="row portfolio-wrapper">
-                        <div class="col-md-4 col-sm-6 grid-item art ">
-                            <a href="" target="_blank" class="work-image">
-                                <div class="portfolio-item rounded shadow-dark">
-                                    <div class="details"><span class="term">Everyone gives work to renowned one,<br> Be
-                                            the first one</span>
-                                        <h4 class="title">Trust the learned one
-                                        </h4><span class="more-button"><i class='bx bx-link-external'></i></span>
-                                    </div>
-                                    <div class="thumb">
-                                        <div class="column has-text-centered">
-                                            <div class="img-row "><img class="img-frame "
-                                                    src="https://media.licdn.com/dms/image/D4D2DAQG9mRpCemtPcw/profile-treasury-image-shrink_800_800/0/1700145975709?e=1700985600&v=beta&t=K7BfArx4UzuwKWJ_O9EaU7quirP8WuMQoRBM1F3muFQ">
-                                            </div>
-                                        </div>
-                                        <div class="mask"></div>
+                    <div class="col-md-7">
+                        <form id="contact-form" class="contact-form mt-6">
+                            <div class="row">
+                                <div class="column col-md-6">
+                                    <div class="form-group">
+                                        <label for="name"></label><input type="text" name="name" id="name"
+                                                                         placeholder="Your name"
+                                                                         required="required"
+                                                                         data-error="Name is required."
+                                                                         class="form-control">
                                     </div>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="col-md-12 mt-3">
-                            <a href="https://github.com/MohdMinhal?tab=repositories" target="_blank"
-                                class="btn btn-default ">See More Projects</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="contact">
-                <div class="container">
-                    <h2 class="section-title wow fadeInUp">Get In Touch</h2>
-                    <div class="spacer-60"></div>
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="contact-info">
-                                <h3 class="wow fadeInUp">Let's talk about everything!</h3>
-                                <p class="wow fadeInUp">Don't like forms? Send me an <a
-                                        href="mailto:mohdminhal.001@gmail.com">email</a>. 👋 </p>
+                                <div class="column col-md-6">
+                                    <div class="form-group">
+                                        <label for="email"></label><input type="email" id="email" name="email"
+                                                                          placeholder="Email address"
+                                                                          required="required"
+                                                                          data-error="Email is required."
+                                                                          class="form-control">
+                                    </div>
+                                </div>
+                                <div class="column col-md-12">
+                                    <div class="form-group">
+                                        <label for="subject"></label><input type="text" id="subject" name="subject"
+                                                                            placeholder="Subject"
+                                                                            required="required"
+                                                                            data-error="Subject is required."
+                                                                            class="form-control">
+                                    </div>
+                                </div>
+                                <div class="column col-md-12">
+                                    <div class="form-group">
+                                        <label for="message"></label><textarea name="message" id="message" rows="5"
+                                                                               placeholder="Message"
+                                                                               required="required"
+                                                                               data-error="Message is required."
+                                                                               class="form-control"></textarea>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-7">
-                            <form id="contact-form" class="contact-form mt-6">
-                                <div class="row">
-                                    <div class="column col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" name="name" id="name" placeholder="Your name"
-                                                required="required" data-error="Name is required." class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="column col-md-6">
-                                        <div class="form-group">
-                                            <input type="email" id="email" name="email" placeholder="Email address"
-                                                required="required" data-error="Email is required."
-                                                class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="column col-md-12">
-                                        <div class="form-group">
-                                            <input type="text" id="subject" name="subject" placeholder="Subject"
-                                                required="required" data-error="Subject is required."
-                                                class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="column col-md-12">
-                                        <div class="form-group">
-                                            <textarea name="message" id="message" rows="5" placeholder="Message"
-                                                required="required" data-error="Message is required."
-                                                class="form-control"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="submit" name="submit" id="submit" value="Submit"
+                            <button type="submit" name="submit" id="submit" value="Submit"
                                     class="btn btn-default">Send
-                                    Message
-                                </button>
-                            </form>
-                        </div>
+                                Message
+                            </button>
+                        </form>
                     </div>
                 </div>
-            </section>
-            <div class="spacer-96"></div>
-        </div>
-        <a href="#" id="return-to-top" class=""><i class="fas fa-arrow-up "></i></a>
-    </main>
-</body>
+            </div>
+        </section>
+        <div class="spacer-96"></div>
+    </div>
+</main>
 <script src="js/toast.js"></script>
 <script src="js/loader.js"></script>
-<script>
-    let menus = document.querySelectorAll("header.desktop-header-2 .vertical-menu li a.nav-link")
-    menus.forEach(v => {
-        v.addEventListener("click", function (e) {
-            document.querySelector('header.desktop-header-2 .vertical-menu li a.nav-link.active').classList.remove('active')
-            this.classList.add("active")
-        })
-    })
-    let sections = ['home', "about", 'services', 'experience', 'works', 'contact']
-
-    function isScrolledIntoView(el) {
-        var observer = new IntersectionObserver(onIntersection, {
-            root: document.querySelector('#parentDiv'),
-            threshold: .5
-        })
-
-        function onIntersection(entries, opts) {
-            entries.forEach(entry => {
-                let id = entry.target.id;
-                if (entry.isIntersecting) {
-                    document.querySelector('header.desktop-header-2 .vertical-menu li a.nav-link.active').classList.remove('active')
-                    document.querySelector(`[href='#${id}']`).classList.toggle('active', entry.isIntersecting)
-                }
-            })
-        }
-
-        observer.observe(el)
-    }
-
-    sections.forEach(value => {
-        isScrolledIntoView(document.querySelector(`#${value}`))
-    })
-</script>
-<script>
-    let toast = new Toast()
-    let loader = new Loader()
-    let form = document.querySelector("#contact-form")
-    form.addEventListener("submit", async (e) => {
-        e.preventDefault()
-        loader.show()
-        let formData = new FormData(e.target)
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const message = formData.get('message');
-        const subject = formData.get('subject');
-
-        const body = {
-            name, email, message, subject
-        }
-        let hasError = false
-        Object.keys(body).forEach(key => {
-            if (body[key].toString().trim() === "") {
-                loader.hide()
-                toast.error(`${key} should not be empty`)
-                hasError = true
-            }
-        })
-
-        if (hasError) return
-        let res = await fetch("https://api-artific.vercel.app/portfolio/api/contact", {
-            method: 'post',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(body)
-        })
-        let data = await res.json()
-        loader.hide()
-        if (data.type === "error") {
-            toast.error(data.error, 'Email not sent')
-            return
-        }
-        if (data.type === "info") {
-            toast.warning(data.message, 'Email not delivered')
-            return
-        }
-        toast.success('Your mail is delivered please wait for the reply', data.message)
-    })
-</script>
-<script type="module">
-    import getMyInfo from ".js/getMyInfo.js";
-
-    const data = await getMyInfo()
-    const bio = document.querySelector('#bio')
-    bio.innerText = data.bio[2].bioDescription
-    const links = document.querySelectorAll('#social-links > li > a')
-    links.forEach(link => {
-        const id = link.id
-        if (data[id]) {
-            link.href = data[id]
-        }
-    })
-</script>
-
+<script src="js/getMyInfo.js"></script>
+<script src="js/skills.js"></script>
+<script src="js/index.js"></script>
+<script src="js/experience.js"></script>
+<script src="js/education.js"></script>
+<script src="js/projects.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
 </html>
