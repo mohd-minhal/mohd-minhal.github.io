@@ -1,12 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (!target) return;
+            const href = this.getAttribute('href');
 
-            // Scroll slowly over 1 second (1000ms)
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Only handle if it’s an in-page anchor
+            if (href.length > 1 && href.startsWith('#')) {
+                const target = document.querySelector(href);
+                if (!target) return;
+
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         });
     });
     // Sections must match the tooltips order
