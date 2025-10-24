@@ -869,7 +869,7 @@ section.home .intro span {
 
 section.home .intro span.designation-span {
     margin: 20px 0 30px;
-    font-size: 80px;
+    font-size: clamp(20px, 5vw, 80px);
     font-weight: 700;
     line-height: 1.2em;
     color: #fff;
@@ -900,6 +900,7 @@ section.home.light .intro span {
 
 section.home.light .social-icons li a {
     color: var(--d-primary-bg);
+    z-index: 2;
 }
 
 section.home.light .social-icons li a:hover {
@@ -1499,6 +1500,7 @@ ANIMATIONS
 }
 
 
+
 /* ===========================
    RESPONSIVE - GRID
    =========================== */
@@ -1551,17 +1553,9 @@ ANIMATIONS
 /* ===========================
    RESPONSIVE - LAYOUT
    =========================== */
-@media only screen and (max-width: 1368px) {
-    section.home .intro span.designation-span {
-        font-size: 60px;
-    }
-}
+
 
 @media only screen and (max-width: 992px) {
-    section.home .intro span.designation-span {
-        font-size: 40px;
-    }
-
     section.home .intro h1 {
         font-size: 28px;
     }
@@ -1607,10 +1601,6 @@ ANIMATIONS
         font-size: 20px;
     }
 
-    section.home .intro span.designation-span {
-        font-size: 25px;
-    }
-
     .portfolio-filter {
         display: none;
     }
@@ -1648,10 +1638,6 @@ ANIMATIONS
 @media screen and (max-width: 992px) {
     section.home .intro h1 {
         font-size: 30px !important;
-    }
-
-    section.home .intro span.designation-span {
-        font-size: 40px !important;
     }
 
     section.home .intro {
@@ -1809,9 +1795,6 @@ ANIMATIONS
 }
 
 @media screen and (max-width: 330px) {
-    section.home .intro span.designation-span {
-        font-size: 24px !important;
-    }
 
     section.home .intro h1 {
         font-size: 19px !important;
